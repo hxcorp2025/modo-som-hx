@@ -1,0 +1,14 @@
+# estado local de cada PC (gerado)
+estado.json
+perfis/
+*.log
+*.wav
+*.bak*
+*.tmp
+
+# scripts da instalacao original no PC do Matheus (historico, nao fazem parte do pacote)
+instalar-apo.ps1
+reiniciar-audio.ps1
+remover-fxsound.ps1
+remover-fxsound-driver.ps1
+teste_*.ps1

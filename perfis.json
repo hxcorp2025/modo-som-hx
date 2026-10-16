@@ -1,0 +1,164 @@
+﻿{
+    "flat":  {
+                 "nome":  "Flat (sem equalização)",
+                 "descricao":  "Som puro do dispositivo. Use pra comparar.",
+                 "preamp":  0,
+                 "filtros":  [
+
+                             ]
+             },
+    "warzone":  {
+                    "nome":  "Warzone (competitivo)",
+                    "descricao":  "Corta o ronco grave que esconde passo, tira a lama dos médios-graves e levanta a faixa onde passo e recarga vivem (2 a 7 kHz). Preamp negativo evita distorcer.",
+                    "preamp":  0,
+                    "filtros":  [
+                                    {
+                                        "tipo":  "HPQ",
+                                        "fc":  90,
+                                        "gain":  0,
+                                        "q":  0.7,
+                                        "rotulo":  "Corte de grave (passa-alta)"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  180,
+                                        "gain":  -3,
+                                        "q":  1,
+                                        "rotulo":  "Ronco (explosão, veículo)"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  450,
+                                        "gain":  -1.5,
+                                        "q":  1.2,
+                                        "rotulo":  "Lama (médio-grave)"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  1200,
+                                        "gain":  1.5,
+                                        "q":  1.2,
+                                        "rotulo":  "Corpo do passo"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  2500,
+                                        "gain":  4,
+                                        "q":  1.2,
+                                        "rotulo":  "Passo e recarga (principal)"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  4000,
+                                        "gain":  3,
+                                        "q":  1.4,
+                                        "rotulo":  "Detalhe do passo"
+                                    },
+                                    {
+                                        "tipo":  "PK",
+                                        "fc":  6500,
+                                        "gain":  2,
+                                        "q":  1.6,
+                                        "rotulo":  "Ar / direção"
+                                    },
+                                    {
+                                        "tipo":  "HS",
+                                        "fc":  10000,
+                                        "gain":  -2,
+                                        "q":  0.7,
+                                        "rotulo":  "Chiado agudo (prateleira)"
+                                    }
+                                ]
+                },
+    "meet":  {
+                 "nome":  "Meet (voz)",
+                 "descricao":  "Voz mais clara e menos abafada em call: corta sub-grave, tira o \"boom\" de 250 Hz e dá presença em 3 kHz.",
+                 "preamp":  -3,
+                 "filtros":  [
+                                 {
+                                     "tipo":  "HPQ",
+                                     "fc":  80,
+                                     "gain":  0,
+                                     "q":  0.7,
+                                     "rotulo":  "Corte de grave (passa-alta)"
+                                 },
+                                 {
+                                     "tipo":  "PK",
+                                     "fc":  250,
+                                     "gain":  -2,
+                                     "q":  1,
+                                     "rotulo":  "Boom de voz"
+                                 },
+                                 {
+                                     "tipo":  "PK",
+                                     "fc":  1000,
+                                     "gain":  1,
+                                     "q":  1.2,
+                                     "rotulo":  "Corpo da voz"
+                                 },
+                                 {
+                                     "tipo":  "PK",
+                                     "fc":  3000,
+                                     "gain":  2.5,
+                                     "q":  1.2,
+                                     "rotulo":  "Presença (inteligibilidade)"
+                                 },
+                                 {
+                                     "tipo":  "PK",
+                                     "fc":  5500,
+                                     "gain":  1,
+                                     "q":  1.5,
+                                     "rotulo":  "Dicção (s, t)"
+                                 },
+                                 {
+                                     "tipo":  "HS",
+                                     "fc":  9000,
+                                     "gain":  0,
+                                     "q":  0.7,
+                                     "rotulo":  "Brilho (prateleira)"
+                                 }
+                             ]
+             },
+    "musica":  {
+                   "nome":  "Música",
+                   "descricao":  "Leve sorriso: um pouco mais de grave e de brilho, médio limpo.",
+                   "preamp":  -4,
+                   "filtros":  [
+                                   {
+                                       "tipo":  "LS",
+                                       "fc":  100,
+                                       "gain":  2.5,
+                                       "q":  0.7,
+                                       "rotulo":  "Grave (prateleira)"
+                                   },
+                                   {
+                                       "tipo":  "PK",
+                                       "fc":  250,
+                                       "gain":  -1,
+                                       "q":  1,
+                                       "rotulo":  "Lama"
+                                   },
+                                   {
+                                       "tipo":  "PK",
+                                       "fc":  1000,
+                                       "gain":  0,
+                                       "q":  1.2,
+                                       "rotulo":  "Médio"
+                                   },
+                                   {
+                                       "tipo":  "PK",
+                                       "fc":  3000,
+                                       "gain":  1,
+                                       "q":  1.2,
+                                       "rotulo":  "Presença"
+                                   },
+                                   {
+                                       "tipo":  "HS",
+                                       "fc":  10000,
+                                       "gain":  2,
+                                       "q":  0.7,
+                                       "rotulo":  "Brilho (prateleira)"
+                                   }
+                               ]
+               }
+}
